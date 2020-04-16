@@ -66,7 +66,7 @@ class Contact extends Component {
         else if (this.state.touched.lastname && lastname.length > 10)
             errors.lastname = 'Last Name shoud be <= 10 characters';
 
-        const reg = /ˆ\d+$/;
+        const reg = /\d+$/;
         if(this.state.touched.telnum && !reg.test(telnum))
             errors.telnum = 'Tel. Number should only contain numbers';
 
